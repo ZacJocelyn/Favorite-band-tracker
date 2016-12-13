@@ -1,0 +1,25 @@
+{
+  "name": "favorite-band-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZacJocelyn/Favorite-band-tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZacJocelyn/Favorite-band-tracker/issues"
+  },
+  "homepage": "https://github.com/ZacJocelyn/Favorite-band-tracker#readme",
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "knex": "^0.12.6",
+    "pg": "^6.1.1"
+  }
+}
