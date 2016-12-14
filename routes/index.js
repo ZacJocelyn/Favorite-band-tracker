@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var knex = require('../db/knex');
 /* GET home page. */
-router.get('/bands', function(req, res, next) {
+router.get('/', function(req, res, next) {
   return knex('favband')
   // .then(data => {
   //   res.json(data)
@@ -23,7 +23,7 @@ router.get('/new', (req, res, next)=>{
   res.render('new')
 })
 
-router.post('/bands', function (req, res, next){
+router.post('/', function (req, res, next){
    knex('favband').insert({
        name: req.body.name,
        genre: req.body.genre,
