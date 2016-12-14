@@ -1,0 +1,41 @@
+{{#each bands}}
+<h5 class = "center align"><a href="/bands/edit/{{this.id}}">{{this.name}}<a></h5>
+<p class="center align">Genre: {{this.genre}}</p>
+<p class="center align">Number of albums: {{this.number_of_albums}}</p>
+<p class="center align">My favorite song: {{this.fav_song}}</p>
+<hr>
+<form class="" action="/bands/edit/{{this.id}}?_method=put" method="post">
+  <div class="row">
+      <div class="row">
+        <div class="input-field col s12">
+          <input value="{{this.name}}" placeholder="Name" id="name" type="text" class="validate" name="name">
+        </div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="row">
+        <div class="input-field col s12">
+          <input value="{{this.genre}}" placeholder="Genre" id="genre" class="validate" name="genre">
+          <label for="genre"></label>
+        </div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="row">
+        <div class="input-field col s12">
+          <input value="{{this.number_of_albums}}" placeholder="Number of albums" id="number_of_albums" class="validate" name="number_of_albums">
+          <label for="number_of_albums"></label>
+        </div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="row">
+        <div class="input-field col s12">
+          <input value="{{this.fav_song}}" placeholder="Favorite song" id="favsong" class="validate" name="fav_song">
+          <label for="favsong"></label>
+        </div>
+      </div>
+  </div>
+  <button class="waves-effect waves-light btn" type="" name="edit">Submit edit</button>
+</form>
+{{/each}}

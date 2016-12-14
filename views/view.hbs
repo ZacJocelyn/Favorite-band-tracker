@@ -1,0 +1,11 @@
+{{#each bands}}
+<h5 class = "center align"><a href="/bands/{{this.id}}">{{this.name}}<a></h5>
+<p class="center align">Genre: {{this.genre}}</p>
+<p class="center align">Number of albums: {{this.number_of_albums}}</p>
+<p class="center align">My favorite song: {{this.fav_song}}</p>
+<hr>
+<form class="" action="/bands/{{this.id}}?_method=delete" method="post">
+  <button class="waves-effect waves-light btn" type="" name="delete">Delete</button>
+  <a href="/bands/edit/{{this.id}}"class="waves-effect waves-light btn" type="" name="edit">edit</a>
+</form>
+{{/each}}
