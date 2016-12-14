@@ -46,7 +46,7 @@ router.post('/', function (req, res, next){
  } else {
    res.status(500)
    res.render('error',{
-     message: 'not a vaild band'
+     message: 'not a valid band'
    })
  }
 });
@@ -78,7 +78,7 @@ router.put('/bands/edit/:id', (req, res) =>{
   else {
    res.status(500)
    res.render('error',{
-     message: 'not a vaild band'
+     message: 'not a valid band'
    })
  }
 })
